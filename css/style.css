@@ -1,0 +1,483 @@
+@charset "UTF-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    padding: var(--margin-base);
+    font-family: var(--font-primary);
+    letter-spacing: 0.12em;
+    line-height: 1.8;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: var(--color-base);
+    color: var(--color-text);
+}
+
+/* content area */
+section{
+    max-width: 120rem;
+    margin: 0 auto var(--margin-base);
+}
+
+section:last-of-type{
+    margin-bottom: 0;
+}
+
+a{
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+a::after{
+    margin-left: 0.2em;
+    font-family: var(--font-icon);
+    content: "\f35d";
+    font-weight: 900;
+}
+
+.topnav{
+    position: fixed;
+    top: 0;
+    right: calc(var(--margin-base) * 0.5);
+    height: 75px;
+    z-index: 100;
+    background: var(--color-menu_back);
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hamburger menu (icon) for mobile devices */
+.mobilemenu__box{
+    position: fixed;
+    top: 5px;
+    right: 2px;
+    height: 60px;
+    width: 60px;
+    z-index: 100;
+    background-color: var(--color-menu_back);
+    /* put the element in the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* create 3 horizontal lines */
+.mobilemenu__box span,         /* middle */
+.mobilemenu__box span:before,  /* top */
+.mobilemenu__box span:after{  /* bottom */
+    /* unable to create the element without content */
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #000;
+    position: absolute;
+}
+/* location of top line relative to the middle line */
+.mobilemenu__box span:before{
+    bottom: 8px;
+}
+/* location of bottom line relative to the middle line */
+.mobilemenu__box span:after{
+    top: 8px;
+}
+
+/* make the checkbox invisible */
+#mobilemenu__check{
+    display: none;
+}
+/* make the 3 horizontal lines a cross when the menu is opened */
+/* make the middle line transparent */
+#mobilemenu__check:checked ~ .mobilemenu__box span{
+    background: rgba(255, 255, 255, 0);
+}
+/* transform the top line to / */
+#mobilemenu__check:checked ~ .mobilemenu__box span::before{
+    bottom: 0;
+    transform: rotate(45deg);
+}
+/* transform the bottom line to \ */
+#mobilemenu__check:checked ~ .mobilemenu__box span::after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+#mobilemenu__check:checked ~ .hamburger__content{
+    left: 0;
+}
+
+/* menu for mobile devices */
+.mobilemenu__content{
+    position: fixed;
+    /* show on the whole screen */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    background-color: var(--color-menu_back);
+}
+/* list in the menu for mobile devices */
+.mobilemenu__list{
+    padding: 50px 50px 0;
+}
+/* item in the menu for mobile devices */
+.mobilemenu__item{
+    list-style: none;
+    font-size: 1.3em;
+	margin-top: 10px;
+}
+
+/* only when the icon was pressed (check is on)
+   scroll the menu to the left of the screen */
+#mobilemenu__check:checked ~ .mobilemenu__content{
+    left: 0;
+}
+.mobilemenu__content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 90;
+    background-color: var(--color-menu_back);
+
+    /* initialization at the right end */
+    left: 100%;
+    /* move from the right end */
+    transition: all 0.3s;
+}
+
+/* screen width < 769px: use mobile menu */
+@media screen and (max-width: 769px){
+    .topnav {
+        display: none;
+    }
+}
+/* screen width > 769px: use normal menu */
+@media screen and (min-width: 769px){
+    .mobilemenu {
+        display: none;
+    }
+}
+
+
+li.navi::before{
+    position: absolute;
+    left: -1.6em;
+    font-family: var(--font-icon);
+    content: "\f02b";
+    font-weight: 900;
+}
+
+
+a#menu{
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-size: var(--font-size);
+    color: var(--color-text);
+}
+
+a#menu:hover{
+    color: var(--color-main);
+}
+
+a#return{
+    display: block;
+    position: fixed;
+    bottom: calc(var(--margin-base) * 0.5);
+    right: calc(var(--margin-base) * 0.5);
+    font-size: 3em;
+    line-height: 1;
+    color: var(--color-accent);
+}
+a#menu::after,
+a#return::after,
+a#navi::after,
+a#download::after{
+    content: none;
+}
+
+a#download{
+    color: var(--color-download);
+}
+
+a#occupation,
+a#education,
+a#academic,
+a#honor,
+a#course{
+    text-decoration: none;
+}
+a#occupation::after,
+a#education::after,
+a#academic::after,
+a#honor::after,
+a#course::after{
+    content: none;
+}
+
+a#int_journal,
+a#int_conference,
+a#book,
+a#dom_conference,
+a#report,
+a#thesis{
+    text-decoration: none;
+}
+a#int_journal::after,
+a#int_conference::after,
+a#book::after,
+a#dom_conference::after,
+a#report::after,
+a#thesis::after{
+    content: none;
+}
+
+h1#index{
+    font-size: 1.8em;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+}
+
+h1#lab_index{
+    font-size: 1.8em;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
+
+.pageitem{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 50px;
+    float: left;
+}
+
+#photo{
+    float: left;
+    width: min(50%, 250px);
+	margin-right: 50px;
+}
+
+.logo{
+	margin-left: 35%;
+    margin-right: 35%;
+    float: left;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(var(--margin-base) * 0.8);
+}
+
+#logo_fig{
+    float: left;
+    width: max(min(150%, 500px), 300px);
+	margin-right: 50px;
+}
+
+#teaching_game{
+    width: min(80%, 400px);
+	margin-right: 50px;
+}
+
+#Go_puzzle{
+    width: min(100%, 700px);
+	margin-right: 50px;
+}
+
+.lang{
+	margin-left: 40%;
+    margin-right: 40%;
+    float: left;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(var(--margin-base) * 0.8);
+}
+
+.lang a{
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-text);
+    letter-spacing: 0.1em;
+}
+
+.lang a i{
+    display: block;
+    margin: 0 auto 0.1em;
+    width: calc(var(--margin-base) * 1.3);
+    height: calc(var(--margin-base) * 1.3);
+    font-size: calc(var(--margin-base) * 0.5);
+    line-height: calc(var(--margin-base) * 1.3);
+    border-radius:50%;
+}
+
+.lang a:nth-child(odd) i{
+    background-color: var(--color-main);
+}
+
+.lang a:nth-child(even) i{
+    background-color: var(--color-accent);
+}
+
+.lang a:hover{
+    color: var(--color-main);
+}
+
+p#supp{
+    color: var(--color-supp);
+    font-size: 1.1em;
+}
+
+text#tw{
+    font-size: 0.9em;
+    font-family: var(--font-tw);
+}
+
+text#tw_navi{
+    font-size: 0.6em;
+    font-family: var(--font-tw);
+}
+
+.box{
+    padding: var(--margin-base) calc(var(--margin-base) * 1.2);
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+}
+
+.box h2{
+    padding-bottom: 0.2em;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-bottom: solid 1px var(--color-main);
+}
+
+.box h2:first-letter{
+    color: var(--color-main);
+}
+
+.box p + h2,
+.box ul + h2,
+.box dl + h2{
+    margin-top: 1.5em;
+}
+
+.box h3{
+    padding-bottom: 0.2em;
+    width: fit-content;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-bottom: solid 1px var(--color-accent);
+}
+
+.box h3:first-letter{
+    color: var(--color-accent);
+}
+
+.box p + h3,
+.box ul + h3,
+.box dl + h3{
+    margin-top: 2.2em;
+}
+
+.box > p{
+    margin: 1.4em 0;
+}
+
+.box > div{
+    margin: 2em 0;
+}
+
+.box > p:first-child,
+.box dl:first-child,
+.box ul:first-child,
+.box > div:first-child{
+    margin-top: 0;
+}
+
+.box p:last-child,
+.box dl:last-child,
+.box ul:last-child,
+.box > div:last-child{
+    margin-bottom: 0;
+}
+
+.box strong{
+    font-weight: 600;
+    background:linear-gradient(transparent 60%, var(--color-marker) 60%);
+}
+
+dl,ul,ol{
+    margin: 1.4em 0;
+    padding-left: 1.6em;
+}
+
+dt,li{
+    position: relative;
+}
+
+ul{
+    column-gap: var(--margin-base);
+}
+
+ul.column1{
+    column-count: 1;
+}
+ul.column2{
+    column-count: 2;
+}
+ul.column3{
+    column-count: 3;
+}
+
+ol{
+    list-style-type: decimal;
+}
+
+li{
+    margin-bottom: 0.3em;
+}
+
+dd{
+    margin-bottom: 1em;
+}
+
+dt::before{
+    position: absolute;
+    left: -1.6em;
+    font-family: var(--font-icon);
+    content: "\f058";
+    font-weight: 400;
+    color: var(--color-accent);
+}
+
+dd.list{
+    position: relative;
+    left: 1.2em;
+    margin-bottom: 0em;
+}
+
+dd.list::before{
+    position: absolute;
+    left: -1.2em;
+    font-family: var(--font-icon);
+    content: "\f0da";
+    font-weight: 900;
+    color: var(--color-accent);
+    margin-bottom: none;
+}
+
+li.item::before{
+    position: absolute;
+    left: -1.2em;
+    font-family: var(--font-icon);
+    content: "\f0da";
+    font-weight: 900;
+}

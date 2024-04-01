@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* read font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;800&display=swap&subset=japanese');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+:root{
+	--color-base: #f4fbf2;
+	--color-main: #E47362;
+	--color-accent: #afb1d0;
+	--color-text: #333;
+	--color-marker: #ffeeaa;
+	--color-light: #fff;
+	--color-download: #FF5050;
+	--color-menu_back: #eee;
+	--color-supp: #040e9c;
+	--font-primary: 'Verdana', 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+	--font-tw: 'Cambria Math';
+	--font-icon: 'Font Awesome 6 Free';
+}
+
+@media screen and (min-width: 1367px) {
+	html{ font-size:65%;}}
+@media screen and (max-width: 1366px) {
+	html{ font-size:60%;}}
+@media screen and (max-width: 768px) {
+	html{ font-size:80%;}}
+@media screen and (max-width: 500px) {
+	html{ font-size:75%;}}
+
+@media screen and (min-width: 769px) {
+	:root {
+		--margin-base: 5rem;
+		--border-radius: 0.5rem;
+	}
+
+	body{
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	:root {
+		--margin-base: 3rem;
+		--border-radius: 0.3rem;
+	}
+
+	body{
+		font-size: 1.2rem;
+	}
+}

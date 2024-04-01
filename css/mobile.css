@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+a#return{
+	font-size: 2em;
+}
+
+h1#index{
+    font-size: 1.35em;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+}
+
+#photo{
+	float: left;
+    width: min(75%, 250px);
+	margin-right: 50px;
+}
+
+.lang a{
+	font-size: 0.9em;
+}
+
+.lang a i{
+	width: calc(var(--margin-base) * 1.5);
+	height: calc(var(--margin-base) * 1.5);
+	font-size: calc(var(--margin-base) * 0.6);
+	line-height: calc(var(--margin-base) * 1.5);
+}
+
+.box{
+	padding:  calc(var(--margin-base) * 0.8) var(--margin-base);
+}
+
+.box p + h2,
+.box ul + h2,
+.box dl + h2{
+	margin-top: 1.2em;
+}
+
+.box p + h3,
+.box ul + h3,
+.box dl + h3{
+	margin-top: 2em;
+}
+
+.box > p{
+	margin: 1.2em 0;
+}
+
+.box > div{
+	margin: 1.4em 0;
+}
+
+dl,ul,ol{
+	margin: 1.2em 0;
+	padding-left: 1.4em;
+}
+
+dt::before,
+li::before{
+	left: -1.4em;
+}
+
+ul.column2,
+ul.column3{
+	column-count: 1;
+}
+
+ul.m-column2{
+	column-count: 2;
+}
+
+ul.m-column3{
+	column-count: 3;
+}
