@@ -1,5 +1,11 @@
 document.write('\
 <li>\
+    Michael Hartisch, <b>Chu-Hsuan Hsueh</b> and Jonathan Schaeffer,\
+    "<a href="https://content.iospress.com/articles/icga-journal/icg240242" target="_blank" rel="noopener noreferrer">Advances in Computer Games (ACG 2023) Conference Report</a>",\
+    ICGA Journal, vol. 45, no. 4, pp. 105-108, 2023\
+    <a id="download" href="papers/Advances in Computer Games (ACG 2023) Conference Report.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+</li>\
+<li>\
     <b>Chu-Hsuan Hsueh</b> and Jr-Chang Chen,\
     "<a href="https://content.iospress.com/articles/icga-journal/icg230220" target="_blank" rel="noopener noreferrer">CLAP_CDC Wins Chinese Dark Chess Tournament</a>",\
     ICGA Journal, vol. 44, no. 3, pp. 114-118, Sep. 2022\

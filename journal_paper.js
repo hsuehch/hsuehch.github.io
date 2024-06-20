@@ -1,6 +1,20 @@
 document.write('\
 <li>\
     <!-- ToDo: repository -->\
+    <b>Chu-Hsuan Hsueh</b>, Takefumi Ishii, Tsuyoshi Hashimoto, and Kokolo Ikeda,\
+    "<a href="https://authors.elsevier.com/sd/article/S1875-9521(24)00104-6" target="_blank" rel="noopener noreferrer">Proposal and Generation of Endgame Puzzles for an Imperfect Information Game Geister</a>",\
+    Entertainment Computing, vol. 52, Jan. 2025\
+    <a id="download" href="papers/Proposal and Generation of Endgame Puzzles for an Imperfect Information Game Geister.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <br><a id="download" href="https://authors.elsevier.com/a/1jHtM6gYiZztiM" target="_blank" rel="noopener noreferrer">(free download of the publisher version until Aug. 8, 2024 <i class="fa-solid fa-file-arrow-down"></i>)</a>\
+</li>\
+<li>\
+    <!-- ToDo: repository? -->\
+    Sang-Gyu Nam, <b>Chu-Hsuan Hsueh</b>, Pavinee Rerkjirattikal, and Kokolo Ikeda,\
+    "<a href="https://ieeexplore.ieee.org/document/10564107" target="_blank" rel="noopener noreferrer">Using Reinforcement Learning to Generate Levels of Super Mario Bros. With Quality and Diversity</a>",\
+    IEEE Transactions on Games, accepted in Jun. 2024\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
     <b>Chu-Hsuan Hsueh</b> and Kokolo Ikeda,\
     "<a href="https://link.springer.com/article/10.1007/s10489-023-05210-2" target="_blank" rel="noopener noreferrer">Improvement of Move Naturalness for Playing Good-Quality Games with Middle-Level Players</a>",\
     Applied Intelligence, vol. 54, no. 2, pp. 1637-1655, Jan. 2024\
