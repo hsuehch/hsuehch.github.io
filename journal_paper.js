@@ -9,6 +9,13 @@ document.write('\
 </li>\
 <li>\
     <!-- ToDo: repository? -->\
+    Tatsuyoshi Ogawa, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
+    "<a href="https://ieeexplore.ieee.org/document/10595450" target="_blank" rel="noopener noreferrer">More Human-Like Gameplay by Blending Policies from Supervised and Reinforcement Learning</a>",\
+    IEEE Transactions on Games, accepted in Jun. 2024\
+    <a id="download" href="https://ieeexplore.ieee.org/document/10564107" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+</li>\
+<li>\
+    <!-- ToDo: repository? -->\
     Sang-Gyu Nam, <b>Chu-Hsuan Hsueh</b>, Pavinee Rerkjirattikal, and Kokolo Ikeda,\
     "<a href="https://ieeexplore.ieee.org/document/10564107" target="_blank" rel="noopener noreferrer">Using Reinforcement Learning to Generate Levels of Super Mario Bros. With Quality and Diversity</a>",\
     IEEE Transactions on Games, accepted in Jun. 2024\
