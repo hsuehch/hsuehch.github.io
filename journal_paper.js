@@ -5,7 +5,6 @@ document.write('\
     "<a href="https://authors.elsevier.com/sd/article/S1875-9521(24)00104-6" target="_blank" rel="noopener noreferrer">Proposal and Generation of Endgame Puzzles for an Imperfect Information Game Geister</a>",\
     Entertainment Computing, vol. 52, Jan. 2025\
     <a id="download" href="papers/Proposal and Generation of Endgame Puzzles for an Imperfect Information Game Geister.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
-    <br><a id="download" href="https://authors.elsevier.com/a/1jHtM6gYiZztiM" target="_blank" rel="noopener noreferrer">(free download of the publisher version until Aug. 8, 2024 <i class="fa-solid fa-file-arrow-down"></i>)</a>\
 </li>\
 <li>\
     <!-- ToDo: repository? -->\
