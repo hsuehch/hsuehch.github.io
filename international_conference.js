@@ -1,5 +1,11 @@
 document.write('\
 <li>\
+    <!-- ToDo: repository -->\
+    Tobias Deinböck, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
+    "Procedurally Generating Natural-Looking Villages in Minecraft with Ant Colony Optimization Algorithms",\
+    The 29th International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2024), Hsinchu, Taiwan, Dec. 6-7, 2024\
+</li>\
+<li>\
     Chien-Liang Kuo, Po-Ting Chen, Hung Guei, De-Rong Sung, <b>Chu-Hsuan Hsueh</b>, Ti-Rong Wu, and I-Chen Wu,\
     "<a href="https://link.springer.com/chapter/10.1007/978-981-97-1711-8_25" target="_blank" rel="noopener noreferrer">An Empirical Analysis of Gumbel MuZero on Stochastic and Deterministic Einstein Würfelt Nicht!</a>",\
     The 28th International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2023), Yunlin, Taiwan, Dec. 1-2, 2023\

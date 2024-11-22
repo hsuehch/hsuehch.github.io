@@ -1,6 +1,30 @@
 document.write('\
 <li>\
-    青山 泰志，<b>シュエ　ジュウシュエン</b>，池田　心，\
+    <!-- ToDo: repository -->\
+    小川　竜欣，<b>シュエ　ジュウシュエン</b>，池田　心，\
+    “<a href="http://id.nii.ac.jp/1001/00240622" target="_blank" rel="noopener noreferrer">着手確率を用いた人間の勝率予測の改善</a>”，\
+    第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
+    窪木　響大，<b>シュエ　ジュウシュエン</b>，池田　心，\
+    “<a href="http://id.nii.ac.jp/1001/00240615" target="_blank" rel="noopener noreferrer">ゲームの展開に過度に影響されないプレイヤ強さの推定方法</a>”，\
+    第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
+    勝又　翼，<b>シュエ　ジュウシュエン</b>，池田　心，\
+    “<a href="http://id.nii.ac.jp/1001/00240614" target="_blank" rel="noopener noreferrer">視野による制約を前提としたゲームAIの強化学習</a>”，\
+    第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
+    <b>シュエ　ジュウシュエン</b>，池田　心，\
+    “<a href="http://id.nii.ac.jp/1001/00240610" target="_blank" rel="noopener noreferrer">囲碁における人間の着手を模倣するにはKataGoの HumanSLだけで十分か？</a>”，\
+    第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\
+</li>\
+<li>\
+    青山　泰志，<b>シュエ　ジュウシュエン</b>，池田　心，\
     “<a href="http://id.nii.ac.jp/1001/00232788" target="_blank" rel="noopener noreferrer">お邪魔ぷよを活用した作品的で面白いなぞぷよ問題の生成</a>”，\
     第51回研究報告ゲーム情報学（GI），2024-GI-51(14)，日本東京，2024年3月8-9日\
     <a id="download" href="http://hdl.handle.net/10119/18826" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
