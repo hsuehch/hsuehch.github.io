@@ -20,11 +20,10 @@ document.write('\
     IEEE Transactions on Games, vol. 16, no. 4, pp. 807-820, Dec. 2024\
 </li>\
 <li>\
-    <!-- ToDo: repository -->\
     <b>Chu-Hsuan Hsueh</b> and Kokolo Ikeda,\
     "<a href="https://link.springer.com/article/10.1007/s10489-023-05210-2" target="_blank" rel="noopener noreferrer">Improvement of Move Naturalness for Playing Good-Quality Games with Middle-Level Players</a>",\
     Applied Intelligence, vol. 54, no. 2, pp. 1637-1655, Jan. 2024\
-    <a id="download" href="papers/Improvement of Move Naturalness for Playing Good-Quality Games with Middle-Level Players.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a id="download" href="http://hdl.handle.net/10119/19414" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     <b>Chu-Hsuan Hsueh</b>, Kokolo Ikeda, I-Chen Wu, Jr-Chang Chen, and Tsan-sheng Hsu,\
@@ -51,9 +50,9 @@ document.write('\
 </li>\
 <li>\
     <b>Chu-Hsuan Hsueh</b>, I-Chen Wu, Tsan-sheng Hsu, and Jr-Chang Chen,\
-    "<a href="https://content.iospress.com/articles/icga-journal/icg046" target="_blank" rel="noopener noreferrer">An Investigation of Strength Analysis Metrics for Game-Playing Programs: A Case Study in Chinese Dark Chess</a>",\
+    "<a href="https://journals.sagepub.com/doi/full/10.3233/ICG-180046" target="_blank" rel="noopener noreferrer">An Investigation of Strength Analysis Metrics for Game-Playing Programs: A Case Study in Chinese Dark Chess</a>",\
     ICGA Journal, vol. 40, no. 2, pp. 77-104, Jun. 2018\
-    <a id="download" href="papers/An Investigation of Strength Analysis Metrics for Game-Playing Programs A Case Study in Chinese Dark Chess.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a id="download" href="https://journals.sagepub.com/doi/full/10.3233/ICG-180046" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     Jiao Wang, Tan Zhu, Hongye Li, <b>Chu-Hsuan Hsueh</b>, and I-Chen Wu,\

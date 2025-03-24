@@ -1,6 +1,26 @@
 document.write('\
 <li>\
     <!-- ToDo: repository -->\
+    林　辰宜，池田　心，<b>シュエ　ジュウシュエン</b>，\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2000784" target="_blank" rel="noopener noreferrer">人間の副目的や不満を尊重する協力型ゲームAIの提案</a>”，\
+    第54回研究報告ゲーム情報学（GI），2025-GI-54(12)，日本東京，2025年3月6-7日\
+    &nbsp;&nbsp;<b><i class="fa-solid fa-award"></i> 若手奨励賞</b>\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
+    徳永　遼太，<b>シュエ　ジュウシュエン</b>，池田　心，\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2000783" target="_blank" rel="noopener noreferrer">大規模言語モデルを報酬計算に用いたキャラクタらしいNPCの強化学習</a>”，\
+    第54回研究報告ゲーム情報学（GI），2025-GI-54(11)，日本東京，2025年3月6-7日\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
+    奥田　真，池田　心，<b>シュエ　ジュウシュエン</b>，\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2000780" target="_blank" rel="noopener noreferrer">人間相手のゲーム実験における時間と場所の制約を緩和するアプリの検討とHanabiでの試行</a>”，\
+    第54回研究報告ゲーム情報学（GI），2025-GI-54(8)，日本東京，2025年3月6-7日\
+    &nbsp;&nbsp;<b><i class="fa-solid fa-award"></i> 優秀発表賞</b>\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
     小川　竜欣，<b>シュエ　ジュウシュエン</b>，池田　心，\
     “<a href="http://id.nii.ac.jp/1001/00240622" target="_blank" rel="noopener noreferrer">着手確率を用いた人間の勝率予測の改善</a>”，\
     第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\

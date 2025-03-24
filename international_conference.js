@@ -17,11 +17,10 @@ document.write('\
     The 28th International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2023), Yunlin, Taiwan, Dec. 1-2, 2023\
 </li>\
 <li>\
-    <!-- ToDo: repository -->\
     <b>Chu-Hsuan Hsueh</b> and Kokolo Ikeda,\
     "<a href="https://link.springer.com/chapter/10.1007/978-3-031-54968-7_7" target="_blank" rel="noopener noreferrer">Can We Infer Move Sequences in Go from Stone Arrangements?</a>",\
     The 18th Conference on Advances in Computer and Games (ACG2023), online, Nov. 28-30, 2023\
-    <a id="download" href="papers/Can We Infer Move Sequences in Go from Stone Arrangements.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a id="download" href="http://hdl.handle.net/10119/19676" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     Sang-Gyu Nam, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
