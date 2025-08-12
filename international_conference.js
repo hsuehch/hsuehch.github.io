@@ -1,8 +1,15 @@
 document.write('\
 <li>\
     <!-- ToDo: repository -->\
+    Kyota Kuboki, Tatsuyoshi Ogawa, <b>Chu-Hsuan Hsueh</b>, Shi-Jim Yen, and Kokolo Ikeda,\
+    "Policies of Multiple Skill Levels for Better Strength Estimation in Games",\
+    The 21st AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE 2025), Edmonton, Alberta, Canada, Nov. 10-14, 2025\
+    (oral presentation acceptance rate of 24.3%)\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
     Tobias Deinböck, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
-    "Procedurally Generating Natural-Looking Villages in Minecraft with Ant Colony Optimization Algorithms",\
+    "<a href="https://link.springer.com/chapter/10.1007/978-981-96-4596-1_9" target="_blank" rel="noopener noreferrer">Procedurally Generating Natural-Looking Villages in Minecraft with Ant Colony Optimization Algorithms</a>",\
     The 29th International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2024), Hsinchu, Taiwan, Dec. 6-7, 2024\
 </li>\
 <li>\
@@ -11,10 +18,10 @@ document.write('\
     The 28th International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2023), Yunlin, Taiwan, Dec. 1-2, 2023\
 </li>\
 <li>\
-    <!-- ToDo: repository -->\
     Kyota Kuboki, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
     "<a href="https://link.springer.com/chapter/10.1007/978-981-97-1711-8_26" target="_blank" rel="noopener noreferrer">Factor Analyses on Positive and Negative Evaluations of Games against Go Programs</a>",\
     The 28th International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2023), Yunlin, Taiwan, Dec. 1-2, 2023\
+    <a id="download" href="http://hdl.handle.net/10119/19704" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     <b>Chu-Hsuan Hsueh</b> and Kokolo Ikeda,\

@@ -52,7 +52,7 @@ document.write('\
     <b>Chu-Hsuan Hsueh</b>, I-Chen Wu, Tsan-sheng Hsu, and Jr-Chang Chen,\
     "<a href="https://journals.sagepub.com/doi/full/10.3233/ICG-180046" target="_blank" rel="noopener noreferrer">An Investigation of Strength Analysis Metrics for Game-Playing Programs: A Case Study in Chinese Dark Chess</a>",\
     ICGA Journal, vol. 40, no. 2, pp. 77-104, Jun. 2018\
-    <a id="download" href="https://journals.sagepub.com/doi/full/10.3233/ICG-180046" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a id="download" href="papers/An Investigation of Strength Analysis Metrics for Game-Playing Programs_A Case Study in Chinese Dark Chess.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     Jiao Wang, Tan Zhu, Hongye Li, <b>Chu-Hsuan Hsueh</b>, and I-Chen Wu,\
