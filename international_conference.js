@@ -1,6 +1,12 @@
 document.write('\
 <li>\
     <!-- ToDo: repository -->\
+    <b>Chu-Hsuan Hsueh</b>, Kyota Kuboki, Shi-Jim Yen, and Kokolo Ikeda,\
+    "Making KataGo HumanSL More Human-Like for Amateur-Level Play",\
+    The 19th Conference on Advances in Computer and Games (ACG2025), online, Oct. 21-23, 2025\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
     Kyota Kuboki, Tatsuyoshi Ogawa, <b>Chu-Hsuan Hsueh</b>, Shi-Jim Yen, and Kokolo Ikeda,\
     "Policies of Multiple Skill Levels for Better Strength Estimation in Games",\
     The 21st AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE 2025), Edmonton, Alberta, Canada, Nov. 10-14, 2025\
