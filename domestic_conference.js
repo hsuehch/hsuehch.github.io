@@ -1,47 +1,59 @@
 document.write('\
 <li>\
     <!-- ToDo: repository -->\
-    林　辰宜，池田　心，<b>シュエ　ジュウシュエン</b>，\
-    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2000784" target="_blank" rel="noopener noreferrer">人間の副目的や不満を尊重する協力型ゲームAIの提案</a>”，\
-    第54回研究報告ゲーム情報学（GI），2025-GI-54(12)，日本東京，2025年3月6-7日\
-    &nbsp;&nbsp;<b><i class="fa-solid fa-award"></i> 若手奨励賞</b>\
-</li>\
-<li>\
-    <!-- ToDo: repository -->\
-    徳永　遼太，<b>シュエ　ジュウシュエン</b>，池田　心，\
-    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2000783" target="_blank" rel="noopener noreferrer">大規模言語モデルを報酬計算に用いたキャラクタらしいNPCの強化学習</a>”，\
-    第54回研究報告ゲーム情報学（GI），2025-GI-54(11)，日本東京，2025年3月6-7日\
-</li>\
-<li>\
-    <!-- ToDo: repository -->\
-    奥田　真，池田　心，<b>シュエ　ジュウシュエン</b>，\
-    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2000780" target="_blank" rel="noopener noreferrer">人間相手のゲーム実験における時間と場所の制約を緩和するアプリの検討とHanabiでの試行</a>”，\
-    第54回研究報告ゲーム情報学（GI），2025-GI-54(8)，日本東京，2025年3月6-7日\
-    &nbsp;&nbsp;<b><i class="fa-solid fa-award"></i> 優秀発表賞</b>\
-</li>\
-<li>\
-    <!-- ToDo: repository -->\
-    小川　竜欣，<b>シュエ　ジュウシュエン</b>，池田　心，\
-    “<a href="http://id.nii.ac.jp/1001/00240622" target="_blank" rel="noopener noreferrer">着手確率を用いた人間の勝率予測の改善</a>”，\
-    第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\
+    鈴木　克磨，<b>シュエ　ジュウシュエン</b>，池田　心，\
+    “プレイヤーの困惑状態を検知してヘルプを提供するシステム”，\
+    第30回ゲームプログラミングワークショップ（GPW-25），日本神奈川，2025年11月14-16日\
 </li>\
 <li>\
     <!-- ToDo: repository -->\
     窪木　響大，<b>シュエ　ジュウシュエン</b>，池田　心，\
-    “<a href="http://id.nii.ac.jp/1001/00240615" target="_blank" rel="noopener noreferrer">ゲームの展開に過度に影響されないプレイヤ強さの推定方法</a>”，\
-    第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\
+    “囲碁における指導AI構築のためのアノテーション設計”，\
+    第30回ゲームプログラミングワークショップ（GPW-25），日本神奈川，2025年11月14-16日\
 </li>\
 <li>\
-    <!-- ToDo: repository -->\
+    林　辰宜，池田　心，<b>シュエ　ジュウシュエン</b>，\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2000784" target="_blank" rel="noopener noreferrer">人間の副目的や不満を尊重する協力型ゲームAIの提案</a>”，\
+    第54回研究報告ゲーム情報学（GI），2025-GI-54(12)，日本東京，2025年3月6-7日\
+    <a id="download" href="http://hdl.handle.net/10119/20014" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    &nbsp;&nbsp;<b><i class="fa-solid fa-award"></i> 若手奨励賞</b>\
+</li>\
+<li>\
+    徳永　遼太，<b>シュエ　ジュウシュエン</b>，池田　心，\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2000783" target="_blank" rel="noopener noreferrer">大規模言語モデルを報酬計算に用いたキャラクタらしいNPCの強化学習</a>”，\
+    第54回研究報告ゲーム情報学（GI），2025-GI-54(11)，日本東京，2025年3月6-7日\
+    <a id="download" href="http://hdl.handle.net/10119/20013" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+</li>\
+<li>\
+    奥田　真，池田　心，<b>シュエ　ジュウシュエン</b>，\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2000780" target="_blank" rel="noopener noreferrer">人間相手のゲーム実験における時間と場所の制約を緩和するアプリの検討とHanabiでの試行</a>”，\
+    第54回研究報告ゲーム情報学（GI），2025-GI-54(8)，日本東京，2025年3月6-7日\
+    <a id="download" href="http://hdl.handle.net/10119/20019" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    &nbsp;&nbsp;<b><i class="fa-solid fa-award"></i> 優秀発表賞</b>\
+</li>\
+<li>\
+    小川　竜欣，<b>シュエ　ジュウシュエン</b>，池田　心，\
+    “<a href="http://id.nii.ac.jp/1001/00240622" target="_blank" rel="noopener noreferrer">着手確率を用いた人間の勝率予測の改善</a>”，\
+    第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\
+    <a id="download" href="http://hdl.handle.net/10119/20017" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+</li>\
+<li>\
+    窪木　響大，<b>シュエ　ジュウシュエン</b>，池田　心，\
+    “<a href="http://id.nii.ac.jp/1001/00240615" target="_blank" rel="noopener noreferrer">ゲームの展開に過度に影響されないプレイヤ強さの推定方法</a>”，\
+    第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\
+    <a id="download" href="http://hdl.handle.net/10119/20018" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+</li>\
+<li>\
     勝又　翼，<b>シュエ　ジュウシュエン</b>，池田　心，\
     “<a href="http://id.nii.ac.jp/1001/00240614" target="_blank" rel="noopener noreferrer">視野による制約を前提としたゲームAIの強化学習</a>”，\
     第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\
+    <a id="download" href="http://hdl.handle.net/10119/20011" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
-    <!-- ToDo: repository -->\
     <b>シュエ　ジュウシュエン</b>，池田　心，\
     “<a href="http://id.nii.ac.jp/1001/00240610" target="_blank" rel="noopener noreferrer">囲碁における人間の着手を模倣するにはKataGoの HumanSLだけで十分か？</a>”，\
     第29回ゲームプログラミングワークショップ（GPW-24），日本神奈川，2024年11月15-17日\
+    <a id="download" href="http://hdl.handle.net/10119/20012" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     青山　泰志，<b>シュエ　ジュウシュエン</b>，池田　心，\

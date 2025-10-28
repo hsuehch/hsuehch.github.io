@@ -7,17 +7,16 @@ document.write('\
     <a id="download" href="papers/Proposal and Generation of Endgame Puzzles for an Imperfect Information Game Geister.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
-    <!-- ToDo: repository? -->\
     Tatsuyoshi Ogawa, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
     "<a href="https://ieeexplore.ieee.org/document/10595450" target="_blank" rel="noopener noreferrer">More Human-Like Gameplay by Blending Policies from Supervised and Reinforcement Learning</a>",\
     IEEE Transactions on Games, vol. 16, no. 4, pp. 831-843, Dec. 2024\
-    <a id="download" href="https://ieeexplore.ieee.org/document/10564107" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a id="download" href="http://hdl.handle.net/10119/20010" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
-    <!-- ToDo: repository? -->\
     Sang-Gyu Nam, <b>Chu-Hsuan Hsueh</b>, Pavinee Rerkjirattikal, and Kokolo Ikeda,\
     "<a href="https://ieeexplore.ieee.org/document/10564107" target="_blank" rel="noopener noreferrer">Using Reinforcement Learning to Generate Levels of Super Mario Bros. With Quality and Diversity</a>",\
     IEEE Transactions on Games, vol. 16, no. 4, pp. 807-820, Dec. 2024\
+    <a id="download" href="http://hdl.handle.net/10119/20015" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     <b>Chu-Hsuan Hsueh</b> and Kokolo Ikeda,\

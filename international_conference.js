@@ -4,6 +4,7 @@ document.write('\
     <b>Chu-Hsuan Hsueh</b>, Kyota Kuboki, Shi-Jim Yen, and Kokolo Ikeda,\
     "Making KataGo HumanSL More Human-Like for Amateur-Level Play",\
     The 19th Conference on Advances in Computer and Games (ACG2025), online, Oct. 21-23, 2025\
+    <a id="download" href="papers/Making KataGo HumanSL More Human-Like for Amateur-Level Play.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     <!-- ToDo: repository -->\
