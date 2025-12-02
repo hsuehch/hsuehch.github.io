@@ -6,4 +6,5 @@ document.write('\
 <link rel="stylesheet" href="css/custom.css?ver0.0.0">\
 <link rel="stylesheet" href="css/style.css?ver0.0.0">\
 <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css?ver0.0.0">\
+<link rel="icon" href="img/Hsueh_Q.jpg">\
 ')

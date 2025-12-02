@@ -253,7 +253,7 @@ h1#lab_index{
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 50px;
-    float: left;
+    float: center;
 }
 
 #photo{
@@ -262,20 +262,9 @@ h1#lab_index{
 	margin-right: 50px;
 }
 
-.logo{
-	margin-left: 35%;
-    margin-right: 35%;
-    float: left;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: calc(var(--margin-base) * 0.8);
-}
-
 #logo_fig{
     float: left;
-    width: max(min(150%, 500px), 300px);
+    width: max(min(120%, 400px), 300px);
 	margin-right: 50px;
 }
 
@@ -290,8 +279,8 @@ h1#lab_index{
 }
 
 .lang{
-	margin-left: 40%;
-    margin-right: 40%;
+	margin-left: 35%;
+    margin-right: 30%;
     float: left;
 
     display: flex;
@@ -480,4 +469,5 @@ li.item::before{
     font-family: var(--font-icon);
     content: "\f0da";
     font-weight: 900;
+    color: var(--color-accent);
 }
