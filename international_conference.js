@@ -2,8 +2,9 @@ document.write('\
 <li>\
     <!-- ToDo: repository -->\
     Kyota Kuboki, Tatsuyoshi Ogawa, <b>Chu-Hsuan Hsueh</b>, Shi-Jim Yen, and Kokolo Ikeda,\
-    "Policies of Multiple Skill Levels for Better Strength Estimation in Games",\
+    "<a href="https://ojs.aaai.org/index.php/AIIDE/article/view/36812/38950" target="_blank" rel="noopener noreferrer">Policies of Multiple Skill Levels for Better Strength Estimation in Games</a>",\
     The 21st AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE 2025), Edmonton, Alberta, Canada, Nov. 10-14, 2025\
+    <a id="download" href="https://ojs.aaai.org/index.php/AIIDE/article/view/36812/38950" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
     (oral presentation acceptance rate of 24.3%)\
 </li>\
 <li>\
