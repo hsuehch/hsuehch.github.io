@@ -1,5 +1,10 @@
 document.write('\
 <li>\
+    Michael Hartisch, <b>Chu-Hsuan Hsueh</b> and Jaap van den Herik,\
+    "<a href="https://journals.sagepub.com/doi/10.1177/13896911261418043" target="_blank" rel="noopener noreferrer">Advances in Computer Games (ACG 2025) Conference Report</a>",\
+    ICGA Journal, vol. pre-press, 2026\
+</li>\
+<li>\
     Michael Hartisch, <b>Chu-Hsuan Hsueh</b> and Jonathan Schaeffer,\
     "<a href="https://journals.sagepub.com/doi/full/10.1177/13896911251342483" target="_blank" rel="noopener noreferrer">Computers and Games (CG 2024) Conference Report</a>",\
     ICGA Journal, vol. 47, no. 2, pp. 112-115, 2025\

@@ -1,14 +1,26 @@
 document.write('\
 <li>\
     <!-- ToDo: repository -->\
+    <b>シュエ　ジュウシュエン</b>，窪木　響大，池田　心，\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2007475" target="_blank" rel="noopener noreferrer">人間プレイヤーの着手を誘導する囲碁AIに向けて</a>”，\
+    第54回研究報告ゲーム情報学（GI），2026-GI-57(8)，日本東京，2026年3月2-3日\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
+    Chenglong Nie，池田　心，<b>シュエ　ジュウシュエン</b>\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2007476" target="_blank" rel="noopener noreferrer">囲碁プレイヤに「センスの良しあし」はあるか？</a>”，\
+    第54回研究報告ゲーム情報学（GI），2026-GI-57(9)，日本東京，2026年3月2-3日\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
     鈴木　克磨，<b>シュエ　ジュウシュエン</b>，池田　心，\
-    “プレイヤーの困惑状態を検知してヘルプを提供するシステム”，\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2005519" target="_blank" rel="noopener noreferrer">プレイヤーの困惑状態を検知してヘルプを提供するシステム</a>”，\
     第30回ゲームプログラミングワークショップ（GPW-25），日本神奈川，2025年11月14-16日\
 </li>\
 <li>\
     <!-- ToDo: repository -->\
     窪木　響大，<b>シュエ　ジュウシュエン</b>，池田　心，\
-    “囲碁における指導AI構築のためのアノテーション設計”，\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2005518" target="_blank" rel="noopener noreferrer">囲碁における指導AI構築のためのアノテーション設計</a>”，\
     第30回ゲームプログラミングワークショップ（GPW-25），日本神奈川，2025年11月14-16日\
 </li>\
 <li>\
