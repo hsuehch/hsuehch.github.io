@@ -1,8 +1,14 @@
 document.write('\
 <li>\
     <!-- ToDo: repository -->\
+    Ke Zhang, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
+    "Event-Based Token Sequences for Audio-Conditioned Music-Game Level Modeling",\
+    The 16th ACM International Conference on Multimedia Retrieval (ICMR 2026), Amsterdam, The Netherlands, Jun. 16-19, 2026\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
     Kyota Kuboki, Tatsuyoshi Ogawa, <b>Chu-Hsuan Hsueh</b>, Shi-Jim Yen, and Kokolo Ikeda,\
-    "<a href="https://ojs.aaai.org/index.php/AIIDE/article/view/36812/38950" target="_blank" rel="noopener noreferrer">Policies of Multiple Skill Levels for Better Strength Estimation in Games</a>",\
+    "<a href="https://ojs.aaai.org/index.php/AIIDE/article/view/36812" target="_blank" rel="noopener noreferrer">Policies of Multiple Skill Levels for Better Strength Estimation in Games</a>",\
     The 21st AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE 2025), Edmonton, Alberta, Canada, Nov. 10-14, 2025\
     <a id="download" href="https://ojs.aaai.org/index.php/AIIDE/article/view/36812/38950" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
     (oral presentation acceptance rate of 24.3%)\
@@ -10,15 +16,15 @@ document.write('\
 <li>\
     <!-- ToDo: repository -->\
     <b>Chu-Hsuan Hsueh</b>, Kyota Kuboki, Shi-Jim Yen, and Kokolo Ikeda,\
-    "Making KataGo HumanSL More Human-Like for Amateur-Level Play",\
+    "<a href="https://link.springer.com/chapter/10.1007/978-3-032-23657-9_13" target="_blank" rel="noopener noreferrer">Making KataGo HumanSL More Human-Like for Amateur-Level Play</a>",\
     The 19th Conference on Advances in Computer and Games (ACG2025), online, Oct. 21-23, 2025\
     <a id="download" href="papers/Making KataGo HumanSL More Human-Like for Amateur-Level Play.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
-    <!-- ToDo: repository -->\
     Tobias Deinböck, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
     "<a href="https://link.springer.com/chapter/10.1007/978-981-96-4596-1_9" target="_blank" rel="noopener noreferrer">Procedurally Generating Natural-Looking Villages in Minecraft with Ant Colony Optimization Algorithms</a>",\
     The 29th International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2024), Hsinchu, Taiwan, Dec. 6-7, 2024\
+    <a id="download" href="https://hdl.handle.net/10119/20348" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     Chien-Liang Kuo, Po-Ting Chen, Hung Guei, De-Rong Sung, <b>Chu-Hsuan Hsueh</b>, Ti-Rong Wu, and I-Chen Wu,\

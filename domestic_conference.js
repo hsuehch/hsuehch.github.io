@@ -1,15 +1,21 @@
 document.write('\
 <li>\
-    <!-- ToDo: repository -->\
-    <b>シュエ　ジュウシュエン</b>，窪木　響大，池田　心，\
-    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2007475" target="_blank" rel="noopener noreferrer">人間プレイヤーの着手を誘導する囲碁AIに向けて</a>”，\
-    第54回研究報告ゲーム情報学（GI），2026-GI-57(8)，日本東京，2026年3月2-3日\
+    蘇亭伃、周果宸、張可欣、楊淳亘、<b>薛筑軒</b>、陳志昌，\
+    “基於 ISMCTS 與 N-Tuple Networks 之幽靈棋研究”，\
+    2026 TCGA電腦對局研討會，台灣台北，2026年5月15-16日\
+    &nbsp;&nbsp;<b><i class="fa-solid fa-award"></i> 論文獎優等</b>\
 </li>\
 <li>\
     <!-- ToDo: repository -->\
-    Chenglong Nie，池田　心，<b>シュエ　ジュウシュエン</b>\
+    <b>シュエ　ジュウシュエン</b>，窪木　響大，池田　心，\
+    “<a href="https://ipsj.ixsq.nii.ac.jp/records/2007475" target="_blank" rel="noopener noreferrer">人間プレイヤーの着手を誘導する囲碁AIに向けて</a>”，\
+    第57回研究報告ゲーム情報学（GI），2026-GI-57(8)，日本東京，2026年3月2-3日\
+</li>\
+<li>\
+    <!-- ToDo: repository -->\
+    Chenglong Nie，池田　心，<b>シュエ　ジュウシュエン</b>，\
     “<a href="https://ipsj.ixsq.nii.ac.jp/records/2007476" target="_blank" rel="noopener noreferrer">囲碁プレイヤに「センスの良しあし」はあるか？</a>”，\
-    第54回研究報告ゲーム情報学（GI），2026-GI-57(9)，日本東京，2026年3月2-3日\
+    第57回研究報告ゲーム情報学（GI），2026-GI-57(9)，日本東京，2026年3月2-3日\
 </li>\
 <li>\
     <!-- ToDo: repository -->\
