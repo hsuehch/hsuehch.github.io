@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <!-- Template modified from: https://sitetsukurou.x0.com/template -->
+<html lang="en">
 <head>
 	<script src="header.js"></script>
 	<title>Chu-Hsuan Hsueh</title>
+	<meta name="description" content="Personal website of Chu-Hsuan Hsueh, Senior Lecturer at JAIST, featuring research, publications, academic background, and the Games and Artificial Intelligence Lab.">
+	<script>setCanonical("");</script>
 </head>
 
-<body>
-	<div class="pageitem">
-		<p>
-			<img id="photo" src="img/Hsueh.jpg" alt="" align="top">
-			<h1 id="index">Chu-Hsuan Hsueh<br>薛筑軒<br><span style="font-size: 0.8em">シュエ　ジュウシュエン</span></h1>
-			<br>
-			<p>
-				Senior Lecturer (Junior Associate Professor)<br>
-				Information Science<br>
-				<a href="https://www.jaist.ac.jp" target="_blank" rel="noopener noreferrer">Japan Advanced Institute of Science and Technology (JAIST)</a><br><br>
-				Email: <script src="email.js"></script>
-			</p>
-		</p>
-	</div>
-	<div class="lang">
-		<p class="text"><a href="background_en.html">English</a></p>
-		<p class="text"><a href="background_jp.html">日本語</a></p>
-		<p class="text"><a href="background_zh.html">中文</a></p>
-		<p class="text"><a href="background_tw.html">台語 <text id="tw">Tâi-gí</text></a></p>
-	</div>
+<body class="home">
+	<main class="home__main">
+		<section class="home__hero" aria-labelledby="home-name">
+			<div class="home__grid" aria-hidden="true"></div>
+
+			<picture class="home__photo-picture">
+				<source media="(max-width: 768px)" srcset="img/Hsueh_mobile.jpg">
+				<img class="home__photo" src="img/Hsueh_desktop.jpg" alt="Portrait of Chu-Hsuan Hsueh">
+			</picture>
+
+			<div class="home__intro">
+				<h1 id="home-name">Chu-Hsuan Hsueh</h1>
+				<p class="home__names">
+					<span lang="zh-Hant">薛筑軒</span>
+					<span lang="ja">シュエ　ジュウシュエン</span>
+				</p>
+				<p class="home__role">
+					Senior Lecturer (Junior Associate Professor)<br>
+					Information Science<br>
+					<a href="https://www.jaist.ac.jp" target="_blank" rel="noopener noreferrer">Japan Advanced Institute of Science and Technology (JAIST)</a>
+				</p>
+				<p class="home__email">Email: <script src="email.js"></script></p>
+			</div>
+		</section>
+
+		<footer class="home__footer">
+			<nav class="home__languages" aria-label="Language">
+				<a href="background_en.html" lang="en">English</a>
+				<a href="background_jp.html" lang="ja">日本語</a>
+				<a href="background_zh.html" lang="zh-Hant">中文</a>
+				<a href="background_tw.html" lang="nan-TW">台語 <span class="home__tai-gi">Tâi-gí</span></a>
+			</nav>
+			<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">
+				<span class="theme-toggle__icon" aria-hidden="true">&#9790;</span>
+			</button>
+		</footer>
+	</main>
 </body>
 </html>

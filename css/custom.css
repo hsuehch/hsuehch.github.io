@@ -1,25 +1,46 @@
 @charset "UTF-8";
 
-/* read font from Google */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;800&display=swap&subset=japanese');
+/* メニューや箇条書きなどのアイコンを表示するために使用する． */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
+/* サイト全体で共有するlight配色とフォント．値を変えると全ページへ反映される． */
 :root{
-	--color-base: #f4fbf2;
-	--color-main: #E47362;
-	--color-accent: #afb1d0;
-	--color-text: #333;
-	--color-marker: #ffeeaa;
-	--color-light: #fff;
-	--color-download: #FF5050;
-	--color-menu_back: #eee;
-	--color-supp: #040e9c;
-	--font-primary: 'Verdana', 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
-	--font-tw: 'Cambria Math';
-	--font-icon: 'Font Awesome 6 Free';
+	color-scheme: light;
+	--color-base: #f4f8f1;       /* ページ全体の背景色 */
+	--color-main: #c76555;       /* 見出しや選択中項目の主アクセント */
+	--color-accent: #6d739e;     /* 小見出し，アイコン，補助リンクの副アクセント */
+	--color-text: #27312c;       /* 通常の本文色 */
+	--color-marker: #ffeeaa;     /* strong要素のマーカー風背景 */
+	--color-light: #fffdf9;      /* 本文カード（.box）の背景 */
+	--color-download: #FF5050;   /* PDF等のダウンロードリンク色 */
+	--color-menu-back: #eef2ed;  /* デスクトップ／モバイルメニューの背景 */
+	--color-supp: #040e9c;       /* 補足文（#supp）の文字色 */
+	--color-muted: #69736d;      /* 所属等の補助テキスト色 */
+	--color-line: #d8dfd7;       /* 境界線やボタン枠の色 */
+	--color-grid: rgba(77, 97, 85, 0.09); /* トップページの薄い格子模様 */
+	--font-primary: 'Verdana', 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', sans-serif; /* 本文フォント */
+	--font-tw: 'Cambria Math';   /* 台語のローマ字表記用フォント */
+	--font-icon: 'Font Awesome 6 Free'; /* CSS疑似要素のアイコンフォント */
 }
 
+/* theme.jsがdata-theme="dark"を設定したとき，上の配色をdark用に差し替える． */
+:root[data-theme="dark"]{
+	color-scheme: dark;
+	--color-base: #171d1a;
+	--color-main: #ed8d7c;
+	--color-accent: #b0b6e0;
+	--color-text: #edf1ed;
+	--color-marker: #685b2d;
+	--color-light: #222a26;
+	--color-download: #ff9c91;
+	--color-menu-back: #222a26;
+	--color-supp: #bdc7ff;
+	--color-muted: #aab4ad;
+	--color-line: #3a4640;
+	--color-grid: rgba(216, 229, 219, 0.07);
+}
+
+/* rem単位の基準サイズ．画面幅に応じて余白と本文の実寸も変化する． */
 @media screen and (min-width: 1367px) {
 	html{ font-size:65%;}}
 @media screen and (max-width: 1366px) {
@@ -29,6 +50,7 @@
 @media screen and (max-width: 500px) {
 	html{ font-size:75%;}}
 
+/* デスクトップ用の共通余白，角丸，本文サイズ． */
 @media screen and (min-width: 769px) {
 	:root {
 		--margin-base: 5rem;
@@ -40,6 +62,7 @@
 	}
 }
 
+/* モバイル用の共通余白，角丸，本文サイズ． */
 @media screen and (max-width: 768px) {
 	:root {
 		--margin-base: 3rem;

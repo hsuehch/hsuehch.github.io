@@ -1,16 +1,58 @@
 <!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
 	<script src="header.js"></script>
 	<title>薛筑軒 | 研究</title>
+	<meta name="description" content="介紹薛筑軒在強大的遊戲AI，遊戲求解，指導對局與遊戲內容自動生成方面的研究。">
+	<script>setCanonical("research_zh.html"); setLanguageAlternates("research");</script>
 </head>
 
 <body>
-	<a href="#" id="return"><i class="fa-solid fa-circle-chevron-up"></i></a>
 	<script src="menu_zh.js"></script>
 
 	<section class="box">
+		<h1>研究</h1>
+		<h2>概要</h2>
 		<p>
-			很抱歉，不過請先參照<a href="research_en.html">英文版</a>或<a href="research_jp.html">日文版</a>。
+			遊戲自古以來便是人類娛樂的一部分，也是AI研究的重要領域之一。
+			如今在許多遊戲中，AI玩家的實力已經超越頂尖的人類玩家。
+			一方面，研究者持續開發強大且具有通用性的AI方法；另一方面，隨著社會朝Society 5.0邁進，讓AI成為更貼近人類的存在也逐漸受到重視。
+			我們致力於遊戲領域中這兩個方向的AI研究。
+		</p>
+		<p class="note">※本研究室並不進行遊戲設計相關研究。</p>
+		<p>
+			以下將簡單介紹這兩個研究方向。
+			詳細內容請參閱<a href="publication_zh.html">著作</a>。
+		</p>
+	</section>
+
+	<section class="box">
+		<h2>強大的AI玩家與遊戲求解</h2>
+		<p>
+			我們利用樹狀搜尋與強化學習，尤其是AlphaZero，開發強大的AI玩家。
+			這些AI玩家也在電腦對局比賽中取得了不錯的成績。
+		</p>
+		<p>
+			除了提升AI玩家的實力之外，我們也對求出遊戲的最佳策略與遊戲理論值，也就是所謂的「遊戲求解」感興趣。
+			簡單來說，在井字棋中，如果雙方都採取最佳策略，遊戲便會以平手結束。
+		</p>
+	</section>
+
+	<section class="box">
+		<h2>以人為中心的遊戲AI</h2>
+		<h3>1．指導對局</h3>
+		<p>
+			我們希望讓AI進行「指導棋」，也就是人類教師在教授圍棋時採用的一種指導方式，如下圖所示。
+			為了實現這個目標，我們研究如何讓AI下出符合人類風格的著手，如何營造品質良好的對局，以及如何指出不佳的著手。
+			我們也希望AI能夠針對局面或著手生成解說與評論。
+			<img id="teaching_game" src="img/teaching_game_zh.svg" alt="圍棋指導對局的示意圖">
+		</p>
+		<h3>2．遊戲內容自動生成（PCG）</h3>
+		<p>
+			遊戲內容包含地圖、音樂、角色、武器與謎題等各種元素。
+			我們研究如何自動生成玩起來有趣，或具有練習效果的遊戲內容。
+			例如，生成能夠引導人類玩家的迷宮、用於練習俄羅斯方塊T-spin技巧的謎題，以及適合圍棋初級與中級玩家的練習題，如下圖所示。
+			<img id="Go_puzzle" src="img/Go_puzzle_zh.svg" alt="遊戲內容自動生成研究的示意圖">
 		</p>
 	</section>
 </body>

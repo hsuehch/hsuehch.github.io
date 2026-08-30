@@ -1,14 +1,17 @@
 @charset "UTF-8";
 
+/* ページ内リンクを滑らかにスクロールする． */
 html{
     scroll-behavior: smooth;
+    overflow-x: clip; /* 画面外で待機するモバイルメニューを横スクロール領域に含めない． */
 }
 
+/* 全ページ共通の余白，本文フォント，背景色を設定する． */
 body{
     position: relative;
     padding: var(--margin-base);
     font-family: var(--font-primary);
-    letter-spacing: 0.12em;
+    letter-spacing: 0.03em; /* 英字を横に広げすぎず，日本語・中国語にも自然な共通字間． */
     line-height: 1.8;
     font-weight: 400;
     overflow-x: hidden;
@@ -16,7 +19,7 @@ body{
     color: var(--color-text);
 }
 
-/* content area */
+/* 通常ページの本文幅を制限し，セクション間に余白を作る． */
 section{
     max-width: 120rem;
     margin: 0 auto var(--margin-base);
@@ -26,11 +29,13 @@ section:last-of-type{
     margin-bottom: 0;
 }
 
+/* 本文リンクは下線付きの本文色を基本とする． */
 a{
     color: var(--color-text);
     text-decoration: underline;
 }
 
+/* 通常リンクの末尾へ外部リンク風アイコンを付ける．不要な箇所では後続ルールで消す． */
 a::after{
     margin-left: 0.2em;
     font-family: var(--font-icon);
@@ -38,20 +43,21 @@ a::after{
     font-weight: 900;
 }
 
+/* デスクトップで画面右上へ固定するメニュー． */
 .topnav{
     position: fixed;
     top: 0;
     right: calc(var(--margin-base) * 0.5);
     height: 75px;
     z-index: 100;
-    background: var(--color-menu_back);
+    background: var(--color-menu-back);
     overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* hamburger menu (icon) for mobile devices */
+/* モバイルメニューを開閉するハンバーガーボタンを画面右上へ固定する． */
 .mobilemenu__box{
     position: fixed;
     top: 5px;
@@ -59,105 +65,91 @@ a::after{
     height: 60px;
     width: 60px;
     z-index: 100;
-    background-color: var(--color-menu_back);
-    /* put the element in the center */
+    background-color: var(--color-menu-back);
+    /* 3本線をボタン中央へ配置する． */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* create 3 horizontal lines */
-.mobilemenu__box span,         /* middle */
-.mobilemenu__box span:before,  /* top */
-.mobilemenu__box span:after{  /* bottom */
-    /* unable to create the element without content */
+/* 1つのspanと疑似要素で中央，上，下の3本線を作る． */
+.mobilemenu__box span,
+.mobilemenu__box span::before,
+.mobilemenu__box span::after{
     content: "";
     display: block;
     height: 3px;
     width: 25px;
     border-radius: 3px;
-    background-color: #000;
+    background-color: var(--color-text);
     position: absolute;
 }
-/* location of top line relative to the middle line */
+/* 上線を中央線から上へずらす． */
 .mobilemenu__box span:before{
     bottom: 8px;
 }
-/* location of bottom line relative to the middle line */
+/* 下線を中央線から下へずらす． */
 .mobilemenu__box span:after{
     top: 8px;
 }
 
-/* make the checkbox invisible */
-#mobilemenu__check{
-    display: none;
-}
-/* make the 3 horizontal lines a cross when the menu is opened */
-/* make the middle line transparent */
-#mobilemenu__check:checked ~ .mobilemenu__box span{
+/* メニューを開いたとき中央線を消し，上下線を交差させる． */
+.mobilemenu.is-open .mobilemenu__box span{
     background: rgba(255, 255, 255, 0);
 }
-/* transform the top line to / */
-#mobilemenu__check:checked ~ .mobilemenu__box span::before{
+.mobilemenu.is-open .mobilemenu__box span::before{
     bottom: 0;
     transform: rotate(45deg);
 }
-/* transform the bottom line to \ */
-#mobilemenu__check:checked ~ .mobilemenu__box span::after{
+.mobilemenu.is-open .mobilemenu__box span::after{
     top: 0;
     transform: rotate(-45deg);
 }
-#mobilemenu__check:checked ~ .hamburger__content{
-    left: 0;
-}
-
-/* menu for mobile devices */
+/* モバイルメニュー本体を画面全体に重ねる． */
 .mobilemenu__content{
     position: fixed;
-    /* show on the whole screen */
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
+    left: 100%;
     z-index: 90;
-    background-color: var(--color-menu_back);
+    background-color: var(--color-menu-back);
+    overflow-y: auto;
+    visibility: hidden;
+    pointer-events: none;
+    transition: left 0.3s, visibility 0s 0.3s;
 }
-/* list in the menu for mobile devices */
+/* モバイルメニューのリンク一覧に余白を設ける． */
 .mobilemenu__list{
     padding: 50px 50px 0;
 }
-/* item in the menu for mobile devices */
+/* モバイルメニューの各項目を縦に並べる． */
 .mobilemenu__item{
     list-style: none;
     font-size: 1.3em;
 	margin-top: 10px;
 }
 
-/* only when the icon was pressed (check is on)
-   scroll the menu to the left of the screen */
-#mobilemenu__check:checked ~ .mobilemenu__content{
+/* ボタンで開いたときメニューを画面内へ移動する． */
+.mobilemenu.is-open .mobilemenu__content{
     left: 0;
-}
-.mobilemenu__content{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 90;
-    background-color: var(--color-menu_back);
-
-    /* initialization at the right end */
-    left: 100%;
-    /* move from the right end */
-    transition: all 0.3s;
+    visibility: visible;
+    pointer-events: auto;
+    transition-delay: 0s;
 }
 
-/* screen width < 769px: use mobile menu */
-@media screen and (max-width: 769px){
+/* キーボード操作時にハンバーガーボタンの選択位置を枠で示す． */
+.mobilemenu__box:focus-visible{
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+/* 768px以下ではデスクトップメニューを隠す． */
+@media screen and (max-width: 768px){
     .topnav {
         display: none;
     }
 }
-/* screen width > 769px: use normal menu */
+/* 769px以上ではモバイルメニューを隠す． */
 @media screen and (min-width: 769px){
     .mobilemenu {
         display: none;
@@ -165,6 +157,7 @@ a::after{
 }
 
 
+/* ページ内目次の各項目へタグ形アイコンを付ける． */
 li.navi::before{
     position: absolute;
     left: -1.6em;
@@ -174,17 +167,20 @@ li.navi::before{
 }
 
 
-a#menu{
+/* メニューリンクの余白と文字色を設定する． */
+a.menu{
     padding: 10px 10px 10px 10px;
     text-decoration: none;
-    font-size: var(--font-size);
+    font-size: inherit;
     color: var(--color-text);
+    overflow-wrap: anywhere; /* 長い多言語表記でもモバイルメニュー幅へ折り返す． */
 }
 
-a#menu:hover{
+a.menu:hover{
     color: var(--color-main);
 }
 
+/* ページ先頭へ戻る固定ボタンを右下へ置く． */
 a#return{
     display: block;
     position: fixed;
@@ -194,20 +190,24 @@ a#return{
     line-height: 1;
     color: var(--color-accent);
 }
-a#menu::after,
+/* 操作用リンクには通常リンクの末尾アイコンを付けない． */
+a.menu::after,
 a#return::after,
-a#navi::after,
-a#download::after{
+a.navi::after,
+a.download::after{
     content: none;
 }
 
-a#download{
+/* PDF等のダウンロードリンクを専用色にする． */
+a.download{
     color: var(--color-download);
 }
 
+/* Backgroundページの見出しアンカーを通常文字として見せる． */
 a#occupation,
 a#education,
 a#academic,
+a#funding,
 a#honor,
 a#course{
     text-decoration: none;
@@ -215,16 +215,18 @@ a#course{
 a#occupation::after,
 a#education::after,
 a#academic::after,
+a#funding::after,
 a#honor::after,
 a#course::after{
     content: none;
 }
 
+/* Publicationsページの節見出しリンクを通常文字として見せる． */
 a#int_journal,
 a#int_conference,
 a#book,
 a#dom_conference,
-a#report,
+a#misc,
 a#thesis{
     text-decoration: none;
 }
@@ -232,42 +234,12 @@ a#int_journal::after,
 a#int_conference::after,
 a#book::after,
 a#dom_conference::after,
-a#report::after,
+a#misc::after,
 a#thesis::after{
     content: none;
 }
 
-h1#index{
-    font-size: 1.8em;
-    letter-spacing: 0.5rem;
-    font-weight: 600;
-}
-
-h1#lab_index{
-    font-size: 1.8em;
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-}
-
-.pageitem{
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 50px;
-    float: center;
-}
-
-#photo{
-    float: left;
-    width: min(50%, 250px);
-	margin-right: 50px;
-}
-
-#logo_fig{
-    float: left;
-    width: max(min(120%, 400px), 300px);
-	margin-right: 50px;
-}
-
+/* Researchページの説明画像が本文幅を超えないよう制限する． */
 #teaching_game{
     width: min(80%, 400px);
 	margin-right: 50px;
@@ -278,67 +250,57 @@ h1#lab_index{
 	margin-right: 50px;
 }
 
-.lang{
-	margin-left: 35%;
-    margin-right: 30%;
-    float: left;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: calc(var(--margin-base) * 0.8);
-}
-
-.lang a{
-    display: block;
-    font-size: 1em;
-    text-align: center;
-    font-weight: 600;
-    color: var(--color-text);
-    letter-spacing: 0.1em;
-}
-
-.lang a i{
-    display: block;
-    margin: 0 auto 0.1em;
-    width: calc(var(--margin-base) * 1.3);
-    height: calc(var(--margin-base) * 1.3);
-    font-size: calc(var(--margin-base) * 0.5);
-    line-height: calc(var(--margin-base) * 1.3);
-    border-radius:50%;
-}
-
-.lang a:nth-child(odd) i{
-    background-color: var(--color-main);
-}
-
-.lang a:nth-child(even) i{
-    background-color: var(--color-accent);
-}
-
-.lang a:hover{
-    color: var(--color-main);
-}
-
-p#supp{
+/* 補足文を本文より少し大きくし，専用色で目立たせる． */
+p#supp,
+p.supp{
     color: var(--color-supp);
     font-size: 1.1em;
 }
 
-text#tw{
+/* 出版物ページの台語ローマ字説明は，強調色を保ちながら本文より少し小さくする． */
+p.supp.tw{
+    font-size: 0.9em;
+}
+
+/* 既存ページの台語ローマ字表記をCambria Mathで小さく表示する． */
+.tw{
     font-size: 0.9em;
     font-family: var(--font-tw);
 }
 
-text#tw_navi{
+/* 短い台語表記では，漢字に対応するローマ字を次の行に表示する． */
+.tw-block{
+    display: block;
+}
+
+/* 段落単位の台語ローマ字表記を漢字段落へ近づけ，ひとまとまりに見せる． */
+.box > p.tw-translation{
+    margin-top: -0.8em;
+}
+
+.tw_navi{
     font-size: 0.6em;
     font-family: var(--font-tw);
 }
 
+/* 通常ページの本文を明るいカード状の領域にまとめる． */
 .box{
     padding: var(--margin-base) calc(var(--margin-base) * 1.2);
     background-color: var(--color-light);
     border-radius: var(--border-radius);
+}
+
+/* 通常ページの主題を示す見えるページ見出し． */
+.box h1{
+    margin: 0 0 1.2em;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* ページ内タグ一覧が続く場合，上側の余白を重ねない． */
+.box h1 + ul{
+    margin-top: 0;
 }
 
 .box h2{
@@ -348,6 +310,7 @@ text#tw_navi{
     border-bottom: solid 1px var(--color-main);
 }
 
+/* 見出しの先頭文字だけを主アクセント色にする． */
 .box h2:first-letter{
     color: var(--color-main);
 }
@@ -366,6 +329,7 @@ text#tw_navi{
     border-bottom: solid 1px var(--color-accent);
 }
 
+/* 小見出しの先頭文字だけを副アクセント色にする． */
 .box h3:first-letter{
     color: var(--color-accent);
 }
@@ -378,6 +342,11 @@ text#tw_navi{
 
 .box > p{
     margin: 1.4em 0;
+}
+
+/* 本文に付随する注記は独立した段落にしつつ，上の本文との間隔を少し狭める． */
+.box > p.note{
+    margin-top: -0.6em;
 }
 
 .box > div{
@@ -403,6 +372,7 @@ text#tw_navi{
     background:linear-gradient(transparent 60%, var(--color-marker) 60%);
 }
 
+/* 定義・箇条書き・番号付きリストの共通余白． */
 dl,ul,ol{
     margin: 1.4em 0;
     padding-left: 1.6em;
@@ -416,20 +386,19 @@ ul{
     column-gap: var(--margin-base);
 }
 
-ul.column1{
-    column-count: 1;
+/* 長い論文名やURLをカード幅内で折り返し，モバイルの横はみ出しを防ぐ． */
+.box a{
+    overflow-wrap: anywhere;
 }
 ul.column2{
     column-count: 2;
-}
-ul.column3{
-    column-count: 3;
 }
 
 ol{
     list-style-type: decimal;
 }
 
+/* リスト項目と定義説明の縦方向の間隔を整える． */
 li{
     margin-bottom: 0.3em;
 }
@@ -438,6 +407,7 @@ dd{
     margin-bottom: 1em;
 }
 
+/* 定義語の左へチェックアイコンを付ける． */
 dt::before{
     position: absolute;
     left: -1.6em;
@@ -447,6 +417,7 @@ dt::before{
     color: var(--color-accent);
 }
 
+/* class=listの定義説明とclass=itemのリスト項目へ三角アイコンを付ける． */
 dd.list{
     position: relative;
     left: 1.2em;
@@ -460,7 +431,7 @@ dd.list::before{
     content: "\f0da";
     font-weight: 900;
     color: var(--color-accent);
-    margin-bottom: none;
+    margin-bottom: 0;
 }
 
 li.item::before{
@@ -470,4 +441,181 @@ li.item::before{
     content: "\f0da";
     font-weight: 900;
     color: var(--color-accent);
+}
+
+/* キーボード操作時にページ先頭へ戻るボタンの選択位置を枠で示す． */
+a#return:focus-visible{
+    outline: 2px solid var(--color-accent);
+    outline-offset: 0.15em;
+}
+/* トップページ専用：通常ページの余白を解除し，画面全体を背景色で満たす． */
+body.home{ min-height: 100vh; padding: 0; letter-spacing: normal; }
+
+/* トップページの内容幅を制限し，画面高を満たす． */
+.home__main{
+    width: min(112rem, 100%);
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 3.8rem 2.8rem;
+}
+
+/* 写真とプロフィールをデスクトップで2列に配置する． */
+.home__hero{
+    position: relative;
+    display: grid;
+    grid-template-columns: 26rem minmax(0, 1fr);
+    align-items: center;
+    gap: 6.2rem;
+    min-height: 58rem;
+    margin: 0;
+    padding: 7.6rem 4%;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-line);
+}
+
+/* 内容を邪魔しない薄い格子模様を右側へ表示する． */
+.home__grid{
+    position: absolute;
+    inset: 0 0 0 42%;
+    background-image: linear-gradient(var(--color-grid) 1px, transparent 1px), linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+    background-size: 4.2rem 4.2rem;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 28%, #000);
+    mask-image: linear-gradient(90deg, transparent, #000 28%, #000);
+}
+
+/* picture要素が画面幅に応じて通常版／軽量版を選び，同じ寸法で表示する． */
+.home__photo-picture{
+    position: relative;
+    z-index: 1;
+    width: 24rem;
+}
+
+/* 写真を縦長の長方形に切り抜き，角だけを控えめに丸くする． */
+.home__photo{
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border: 1px solid var(--color-line);
+    border-radius: 12px;
+}
+
+.home__intro{ position: relative; z-index: 1; }
+
+/* トップページの英語名をセリフ体で表示する． */
+.home__intro h1{
+    margin: 0 0 0.3rem;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+}
+
+/* 英語名，繁体字名，日本語読みの大きさと間隔を設定する． */
+.home__names{ margin: 1.6rem 0 2.8rem; font-size: 32px; letter-spacing: 0.14em; }
+.home__names span + span{ margin-left: 1.3rem; color: var(--color-muted); font-size: 28px; }
+/* 所属とメールアドレスは本文より控えめな色にする． */
+.home__role{ margin: 0; color: var(--color-muted); line-height: 1.75; }
+.home__role a{ color: var(--color-accent); text-underline-offset: 0.4rem; }
+.home__email{ margin: 2.8rem 0 0; color: var(--color-muted); }
+
+/* 言語リンクとテーマ切替をトップページ下部へ並べる． */
+.home__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.2rem;
+    padding: 3rem 4% 0.4rem;
+}
+
+/* 言語リンクを折返し可能な丸いボタンとして表示する． */
+.home__languages{ display: flex; flex-wrap: wrap; gap: 0.8rem; }
+
+.home__languages a{
+    padding: 0.5rem 1rem;
+    color: var(--color-muted);
+    text-decoration: none;
+    border: 1px solid var(--color-line);
+    border-radius: 999px;
+}
+
+.home__languages a::after,
+.theme-toggle::after{ content: none; }
+
+/* マウス操作とキーボード操作の両方で選択位置を示す． */
+.home__languages a:hover,
+.home__languages a:focus-visible{ color: var(--color-text); border-color: var(--color-main); }
+.home__tai-gi{ font-family: var(--font-tw); font-size: 0.9em; }
+
+/* 台語メニューの漢字とローマ字を2段にし，各行の中央を揃える． */
+a.menu.menu--tw{
+    display: inline-block;
+    text-align: center;
+}
+
+/* light/dark切替を言語リンクと区別できる，文字なしの円形アイコンボタンにする． */
+.theme-toggle{
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    color: var(--color-text);
+    background: var(--color-light);
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 0.2rem 1rem rgba(39, 49, 44, 0.12);
+    cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible{ color: var(--color-main); }
+/* 太陽と月のアイコン寸法を揃える． */
+.theme-toggle__icon{ font-size: 2.2rem; line-height: 1; }
+
+/* dark配色では影を濃くし，暗い背景上でもボタンを判別しやすくする． */
+:root[data-theme="dark"] .theme-toggle{
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+/* 通常ページのデスクトップメニューでは，リンク列の末尾へ少し間隔を空けて置く． */
+.topnav .theme-toggle--desktop-menu{
+    margin: 0 1rem 0 0.5rem;
+}
+
+/* モバイルメニューではラベルを付けず，リンク一覧の下で右寄せにする． */
+.mobilemenu__theme-item{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-line);
+}
+
+/* 研究室トップ専用：個人トップと同じ2列構成でロゴと研究室名を見せる． */
+.lab-home__hero{
+    grid-template-columns: 30rem minmax(0, 1fr);
+}
+
+/* SVGロゴを装飾枠なしでそのまま表示する． */
+.lab-home__logo-frame{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 30rem;
+}
+
+.lab-home__logo{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.lab-home__intro h1{
+    max-width: 70rem;
+    font-size: 38px;
 }

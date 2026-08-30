@@ -2,15 +2,16 @@ document.write('\
 <li>\
     <!-- ToDo: repository -->\
     Ke Zhang, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
-    "Event-Based Token Sequences for Audio-Conditioned Music-Game Level Modeling",\
+    "<a href="https://dl.acm.org/doi/10.1145/3805622.3810623" target="_blank" rel="noopener noreferrer">Event-Based Token Sequences for Audio-Conditioned Music-Game Level Modeling</a>",\
     The 16th ACM International Conference on Multimedia Retrieval (ICMR 2026), Amsterdam, The Netherlands, Jun. 16-19, 2026\
+    <a class="download" href="https://dl.acm.org/doi/pdf/10.1145/3805622.3810623" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     <!-- ToDo: repository -->\
     Kyota Kuboki, Tatsuyoshi Ogawa, <b>Chu-Hsuan Hsueh</b>, Shi-Jim Yen, and Kokolo Ikeda,\
     "<a href="https://ojs.aaai.org/index.php/AIIDE/article/view/36812" target="_blank" rel="noopener noreferrer">Policies of Multiple Skill Levels for Better Strength Estimation in Games</a>",\
     The 21st AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE 2025), Edmonton, Alberta, Canada, Nov. 10-14, 2025\
-    <a id="download" href="https://ojs.aaai.org/index.php/AIIDE/article/view/36812/38950" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://ojs.aaai.org/index.php/AIIDE/article/view/36812/38950" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
     (oral presentation acceptance rate of 24.3%)\
 </li>\
 <li>\
@@ -18,13 +19,13 @@ document.write('\
     <b>Chu-Hsuan Hsueh</b>, Kyota Kuboki, Shi-Jim Yen, and Kokolo Ikeda,\
     "<a href="https://link.springer.com/chapter/10.1007/978-3-032-23657-9_13" target="_blank" rel="noopener noreferrer">Making KataGo HumanSL More Human-Like for Amateur-Level Play</a>",\
     The 19th Conference on Advances in Computer and Games (ACG2025), online, Oct. 21-23, 2025\
-    <a id="download" href="papers/Making KataGo HumanSL More Human-Like for Amateur-Level Play.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="papers/Making KataGo HumanSL More Human-Like for Amateur-Level Play.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     Tobias Deinböck, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
     "<a href="https://link.springer.com/chapter/10.1007/978-981-96-4596-1_9" target="_blank" rel="noopener noreferrer">Procedurally Generating Natural-Looking Villages in Minecraft with Ant Colony Optimization Algorithms</a>",\
     The 29th International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2024), Hsinchu, Taiwan, Dec. 6-7, 2024\
-    <a id="download" href="https://hdl.handle.net/10119/20348" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://hdl.handle.net/10119/20348" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     Chien-Liang Kuo, Po-Ting Chen, Hung Guei, De-Rong Sung, <b>Chu-Hsuan Hsueh</b>, Ti-Rong Wu, and I-Chen Wu,\
@@ -35,13 +36,13 @@ document.write('\
     Kyota Kuboki, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
     "<a href="https://link.springer.com/chapter/10.1007/978-981-97-1711-8_26" target="_blank" rel="noopener noreferrer">Factor Analyses on Positive and Negative Evaluations of Games against Go Programs</a>",\
     The 28th International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2023), Yunlin, Taiwan, Dec. 1-2, 2023\
-    <a id="download" href="http://hdl.handle.net/10119/19704" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://hdl.handle.net/10119/19704" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     <b>Chu-Hsuan Hsueh</b> and Kokolo Ikeda,\
     "<a href="https://link.springer.com/chapter/10.1007/978-3-031-54968-7_7" target="_blank" rel="noopener noreferrer">Can We Infer Move Sequences in Go from Stone Arrangements?</a>",\
     The 18th Conference on Advances in Computer and Games (ACG2023), online, Nov. 28-30, 2023\
-    <a id="download" href="http://hdl.handle.net/10119/19676" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://hdl.handle.net/10119/19676" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     Sang-Gyu Nam, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
@@ -52,38 +53,38 @@ document.write('\
     Tatsuyoshi Ogawa, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
     "<a href="https://www.scitepress.org/Link.aspx?doi=10.5220/0011804200003393" target="_blank" rel="noopener noreferrer">Improving the Human-Likeness of Game AI\'s Moves by Combining Multiple Prediction Models</a>",\
     The 15th International Conference on Agents and Artificial Intelligence (ICAART 2023), Lisbon, Portugal, Feb. 22-24, 2023\
-    <a id="download" href="http://hdl.handle.net/10119/18718" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://hdl.handle.net/10119/18718" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     <b>Chu-Hsuan Hsueh</b> and Kokolo Ikeda,\
     "<a href="https://ieeexplore.ieee.org/document/9893698" target="_blank" rel="noopener noreferrer">Playing Good-Quality Games with Weak Players by Combining Programs with Different Roles</a>",\
     2022 IEEE Conference on Games (CoG 2022), online, Aug. 21-24, 2022\
-    <a id="download" href="http://hdl.handle.net/10119/18240" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://hdl.handle.net/10119/18240" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     Wanxiang Li, Houkuan He, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
     "<a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=MQBgd3RVIvA=" target="_blank" rel="noopener noreferrer">Graph Convolutional Networks for Turn-Based Strategy Games</a>",\
     The 14th International Conference on Agents and Artificial Intelligence (ICAART 2022), online, Feb. 3-5, 2022\
-    <a id="download" href="http://hdl.handle.net/10119/18242" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://hdl.handle.net/10119/18242" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     Keita Fujihira, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
     "<a href="https://link.springer.com/chapter/10.1007/978-3-031-11488-5_15" target="_blank" rel="noopener noreferrer">Procedural Maze Generation Considering Difficulty from Human Players\' Perspectives</a>",\
     The 17th Conference on Advances in Computer and Games (ACG2021), online, Nov. 23-25, 2021\
-    <a id="download" href="http://hdl.handle.net/10119/18467" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://hdl.handle.net/10119/18467" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     <b>Chu-Hsuan Hsueh</b>, Kokolo Ikeda, Sang-Gyu Nam, and I-Chen Wu,\
     "<a href="https://ieeexplore.ieee.org/document/9382432" target="_blank" rel="noopener noreferrer">Analyses of Tabular AlphaZero on NoGo</a>",\
     The 2020 International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2020), online, Dec. 3-5, 2020\
-    <a id="download" href="http://hdl.handle.net/10119/18244" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://hdl.handle.net/10119/18244" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
     &nbsp;&nbsp;<b><i class="fa-solid fa-award"></i> International Track Best Poster Award</b>\
 </li>\
 <li>\
     Wanxiang Li, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
     "<a href="https://ieeexplore.ieee.org/document/9231805" target="_blank" rel="noopener noreferrer">Imitating Agents in A Complex Environment by Generative Adversarial Imitation Learning</a>",\
     2020 IEEE Conference on Games (CoG 2020), online, Aug. 24-27, 2020\
-    <a id="download" href="http://hdl.handle.net/10119/18239" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://hdl.handle.net/10119/18239" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     Tung-Yi Lai, <b>Chu-Hsuan Hsueh</b>, You-Hsuan Lin, Yeong-Jia Roger Chu, Bo-Yang Hsueh and I-Chen Wu,\
@@ -94,13 +95,13 @@ document.write('\
     Taishi Oikawa, <b>Chu-Hsuan Hsueh</b>, and Kokolo Ikeda,\
     "<a href="https://link.springer.com/chapter/10.1007/978-3-030-65883-0_4" target="_blank" rel="noopener noreferrer">Improving Human Players\' T-Spin Skills in Tetris with Procedural Problem Generation</a>",\
     The 16th Conference on Advances in Computer and Games (ACG2019), Macau, China, Aug. 11-13, 2019\
-    <a id="download" href="http://hdl.handle.net/10119/18019" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="https://hdl.handle.net/10119/18019" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 <li>\
     <b>Chu-Hsuan Hsueh</b>, I-Chen Wu, Jr-Chang Chen, and Tsan-sheng Hsu,\
     "<a href="https://ieeexplore.ieee.org/document/8588490" target="_blank" rel="noopener noreferrer">AlphaZero for a Non-deterministic Game</a>",\
     The 2018 Conference on Technologies and Applications of Artificial Intelligence (TAAI 2018), Taichung, Taiwan, Nov. 30-Dec. 2, 2018\
-    <a id="download" href="papers/AlphaZero for a Non-deterministic Game.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="papers/AlphaZero for a Non-deterministic Game.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
     &nbsp;&nbsp;<b><i class="fa-solid fa-award"></i> International Track Best Paper Award</b>\
 </li>\
 <li>\
@@ -128,6 +129,6 @@ document.write('\
     <b>Chu-Hsuan Hsueh</b>, I-Chen Wu, Wen-Jie Tseng, Shi-Jim Yen, and Jr-Chang Chen,\
     "<a href="https://link.springer.com/chapter/10.1007/978-3-319-27992-3_4" target="_blank" rel="noopener noreferrer">Strength Improvement and Analysis for an MCTS-Based Chinese Dark Chess Program</a>",\
     The 14th conference on Advances in Computer and Games (ACG2015), Leiden, The Netherlands, Jul. 1-3, 2015\
-    <a id="download" href="papers/Strength Improvement and Analysis for an MCTS-Based Chinese Dark Chess Program.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
+    <a class="download" href="papers/Strength Improvement and Analysis for an MCTS-Based Chinese Dark Chess Program.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>\
 </li>\
 ')

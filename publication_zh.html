@@ -1,28 +1,32 @@
 <!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
 	<script src="header.js"></script>
 	<title>薛筑軒 | 著作</title>
+	<meta name="description" content="薛筑軒的期刊論文，會議論文，著書，學位論文與其他著作。">
+	<script>setCanonical("publication_zh.html"); setLanguageAlternates("publication");</script>
 </head>
 
 <body>
-	<a href="#" id="return"><i class="fa-solid fa-circle-chevron-up"></i></a>
 	<script src="menu_zh.js"></script>
 
 	<section class="box">
+		<h1>著作</h1>
 		<p id="supp">
-			點選<u>有底線的論文題目</u>可以連到出版社的網頁。<br>
+			點選<u>有底線的論文題目</u>可以連到出版社的網頁。
 			免費版本（若有）可以點選
-			<a id="download"><i class="fa-solid fa-file-arrow-down"></i></a>
-			下載，不過排版可能會和正式出版不同。<br>
+			<a class="download"><i class="fa-solid fa-file-arrow-down"></i></a>
+			下載，不過排版可能會和正式出版不同。
 			論文基本資料以該論文使用的語言書寫。
 		</p>
 		<ul class="column2 m-column2">
-			<li class="navi"><a id="navi" href="#int_journal">國際期刊</a></li>
-			<li class="navi"><a id="navi" href="#int_conference">國際會議</a></li>
-			<li class="navi"><a id="navi" href="#book">著書</a></li>
-			<li class="navi"><a id="navi" href="#dom_conference">國內會議</a></li>
-			<li class="navi"><a id="navi" href="#misc">其他</a></li>
-			<li class="navi"><a id="navi" href="#thesis">學位論文</a></li>
+			<li class="navi"><a class="navi" href="#int_journal">國際期刊</a></li>
+			<li class="navi"><a class="navi" href="#int_conference">國際會議</a></li>
+			<li class="navi"><a class="navi" href="#book">著書</a></li>
+			<li class="navi"><a class="navi" href="#dom_conference">國內會議</a></li>
+			<li class="navi"><a class="navi" href="#misc">其他</a></li>
+			<li class="navi"><a class="navi" href="#thesis">學位論文</a></li>
+			<!-- <li class="navi"><a class="navi" href="#supervised_theses">指導學生學位論文</a></li> -->
 		</ul>
 	</section>
 
@@ -67,5 +71,15 @@
 			<script src="thesis.js"></script>
 		</ol>
 	</section>
+
+	<!-- 將來新增的區段：
+	<section class="box">
+		<h2><a id="supervised_theses">指導學生學位論文</a></h2>
+		<h3>博士論文</h3>
+		<ol reversed></ol>
+		<h3>碩士論文</h3>
+		<ol reversed></ol>
+	</section>
+	-->
 </body>
 </html>

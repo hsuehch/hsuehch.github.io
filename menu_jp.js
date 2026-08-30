@@ -5,7 +5,7 @@ var page_prefixes = [
 var lang_code = "jp"
 var page_descriptions = [
     "ホーム",
-    "背景",
+    "経歴",
     "研究",
     "出版物",
     "研究室",
@@ -14,7 +14,7 @@ var page_descriptions = [
 
 document.write('<div class="topnav">\n')
 for (let i = 0; i < page_descriptions.length; i++) {
-    document.write('<a id="menu" href="')
+    document.write('<a class="menu" href="')
     document.write(page_prefixes[i])
     if (i != 0) {
         document.write('_' + lang_code)
@@ -25,13 +25,15 @@ for (let i = 0; i < page_descriptions.length; i++) {
 }
 document.write('</div>\n')
 
+/* 通常ページ共通の，ページ先頭へ戻るボタン． */
+document.write('<a href="#" id="return" aria-label="ページ先頭へ戻る"><i class="fa-solid fa-circle-chevron-up" aria-hidden="true"></i></a>\n')
+
 document.write('<div class="mobilemenu">\n')
-document.write('<input type="checkbox" id="mobilemenu__check">\n')
-document.write('<label for="mobilemenu__check" class="mobilemenu__box"><span></span></label>\n')
-document.write('<div class="mobilemenu__content">')
+document.write('<button type="button" class="mobilemenu__box" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobilemenu__content" data-open-label="メニューを開く" data-close-label="メニューを閉じる"><span aria-hidden="true"></span></button>\n')
+document.write('<div class="mobilemenu__content" id="mobilemenu__content">')
 document.write('<ul class="mobilemenu__list">')
 for (let i = 0; i < page_descriptions.length; i++) {
-    document.write('<li class="mobilemenu__item"><a id="menu" href="')
+    document.write('<li class="mobilemenu__item"><a class="menu" href="')
     document.write(page_prefixes[i])
     if (i != 0) {
         document.write('_' + lang_code)

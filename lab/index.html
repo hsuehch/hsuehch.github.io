@@ -1,26 +1,40 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
 	<script src="header.js"></script>
-	<title>GAI Lab</title>
+	<title>Games and Artificial Intelligence Lab</title>
+	<meta name="description" content="Games and Artificial Intelligence Lab at JAIST, led by Chu-Hsuan Hsueh.">
+	<script>setCanonical("lab/");</script>
 </head>
 
-<body>
-	<br><br><br>
-	<div class="pageitem">
-		<p>
-			<img id="logo_fig" src="../img/lab_logo.svg" alt="" align="top">
-			<h1 id="lab_index">Games and Artificial Intelligence Lab</h1>
-			<br>
-			<p>
-				<a href="https://www.jaist.ac.jp" target="_blank" rel="noopener noreferrer">Japan Advanced Institute of Science and Technology (JAIST)</a>
-			</p>
-		</p>
-	</div>
-	<div class="lang">
-		<p class="text"><a href="introduction_en.html">English</a></p>
-		<p class="text"><a href="introduction_jp.html">日本語</a></p>
-		<p class="text"><a href="introduction_zh.html">中文</a></p>
-		<p class="text"><a href="introduction_tw.html">台語 <text id="tw">Tâi-gí</text></a></p>
-	</div>
+<body class="home lab-home">
+	<main class="home__main">
+		<section class="home__hero lab-home__hero" aria-labelledby="lab-name">
+			<div class="home__grid" aria-hidden="true"></div>
+
+			<div class="lab-home__logo-frame">
+				<img class="lab-home__logo" src="../img/lab_logo.svg" alt="Games and Artificial Intelligence Lab logo">
+			</div>
+
+			<div class="home__intro lab-home__intro">
+				<h1 id="lab-name">Games and Artificial Intelligence Lab</h1>
+				<p class="home__role">
+					<a href="https://www.jaist.ac.jp" target="_blank" rel="noopener noreferrer">Japan Advanced Institute of Science and Technology (JAIST)</a>
+				</p>
+			</div>
+		</section>
+
+		<footer class="home__footer">
+			<nav class="home__languages" aria-label="Language">
+				<a href="introduction_en.html" lang="en">English</a>
+				<a href="introduction_jp.html" lang="ja">日本語</a>
+				<a href="introduction_zh.html" lang="zh-Hant">中文</a>
+				<a href="introduction_tw.html" lang="nan-TW">台語 <span class="home__tai-gi">Tâi-gí</span></a>
+			</nav>
+			<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">
+				<span class="theme-toggle__icon" aria-hidden="true">&#9790;</span>
+			</button>
+		</footer>
+	</main>
 </body>
 </html>
