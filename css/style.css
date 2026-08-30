@@ -239,15 +239,22 @@ a#thesis::after{
     content: none;
 }
 
-/* Researchページの説明画像が本文幅を超えないよう制限する． */
-#teaching_game{
-    width: min(80%, 400px);
+/* Researchページの説明画像を本文の次の行へ置き，右側に余白を設ける． */
+#teaching_game,
+#Go_puzzle{
+    display: block;
+	margin-top: 1em;
 	margin-right: 50px;
 }
 
+/* 指導碁の図を本文幅の80%，最大400pxに制限する． */
+#teaching_game{
+    width: min(80%, 400px);
+}
+
+/* 囲碁問題の図を本文幅以内，最大700pxに制限する． */
 #Go_puzzle{
     width: min(100%, 700px);
-	margin-right: 50px;
 }
 
 /* 補足文を本文より少し大きくし，専用色で目立たせる． */
